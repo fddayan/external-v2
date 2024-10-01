@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { HeadProps, PageProps } from "gatsby";
-import { Button } from "@repo/ui/button";
+import { Button } from "@repo/ui/index";
 
 function IndexPage(_: PageProps): JSX.Element {
   return (

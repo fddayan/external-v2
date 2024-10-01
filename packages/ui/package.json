@@ -2,7 +2,7 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "exports": {
-    "./button": "./src/button.tsx"
+    "./index": "./src/index.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0"
