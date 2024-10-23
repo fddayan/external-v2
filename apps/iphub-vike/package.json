@@ -1,0 +1,36 @@
+{
+  "name": "iphub-vike",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@repo/data": "workspace:*",
+    "@repo/iphub-pages": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@t3-oss/env-core": "^0.11.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.9.0",
+    "graphql-http": "^1.22.1",
+    "graphql-request": "^7.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vike-react": "^0.5.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.2",
+    "vike": "^0.4.197",
+    "vite": "^5.4.8"
+  },
+  "type": "module"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@repo/iphub-pages",
+  "version": "0.0.0",
+  "exports": {
+    "./index": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@web-monorepo/dds": "workspace:*",
+    "graphql-request": "^7.1.0",
+    "@classdojo/log-client": "1.9.89",
+    "react": "^18.2.0"
+  }
+}

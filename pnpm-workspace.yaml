@@ -1,3 +1,7 @@
 packages:
   - "apps/*"
   - "packages/*"
+  - "submodules/web-monorepo/packages/dds"
+  - "submodules/web-monorepo/packages/dds-icons"
+  - "submodules/web-monorepo/packages/vite-typed-css-modules-plugin"
+  - "submodules/web-monorepo/packages/config/stylelint-config"
