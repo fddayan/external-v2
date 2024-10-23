@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "module": "ESNext",
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["./*"]
+    },
+    "types": ["vite/client", "vike-react"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react"
+  },
+  "exclude": ["dist"],
+  "typeRoots": ["./src/customTypings"]
+}

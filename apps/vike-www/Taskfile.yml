@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  clean:
+    cmds:
+      - rm -rf dist
+
+  build:
+    deps:
+      - clean
+    cmds:
+      - pnpm build

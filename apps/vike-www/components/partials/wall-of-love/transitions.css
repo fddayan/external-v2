@@ -1,0 +1,21 @@
+.wall-of-love-card-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.wall-of-love-card-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.wall-of-love-card-exit {
+  opacity: 1;
+}
+
+.wall-of-love-card-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
