@@ -1,0 +1,5 @@
+We vendored update.min.js from http://browser-update.org/update.min.js because we want to be able to run the browser check code synchronously instead of waiting to load a 3rd-party dependency. We want to run the browser check synchronously so that if a browser is unsupported, we don't execute any app code. And we do that because certain browsers (IE 10, Safari < 7) don't default to a secure version of TLS and we don't want these browsers to send any API calls, which would normally happen during app init.
+
+We also vendered update.show.min.js because update.min.js depends on it. Leaving update.min.js to fetch update.show.min.js from browser-update.org is risky because the internals of their scripts may change. To vendor, we change the `domain` flag in `index.html.ejs` to be blank, meaning update.min.js will fetch `/update.show.min.js`. To expose `/update.show.min.js`, we use the CopyWebpackPlugin to move the file directly to the build directory. From there, the frontend's deploy step will copy the build directory directly to the S3 bucket.
+
+We may need to update the vendored file from time to time.

@@ -1,0 +1,56 @@
+body .buorg {
+  height: 100%;
+  font-size: 18px;
+  animation: none;
+  background: white;
+}
+
+body .buorg::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: no-repeat url(https://static.classdojo.com/img/mojo.svg);
+  background-size: contain;
+  margin: 20px auto 0;
+}
+
+body .buorg p {
+  box-sizing: border-box;
+  width: 50%;
+  min-width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-indent: 0;
+}
+
+body .buorg-button {
+  display: block;
+  padding: 9px;
+  outline: none;
+  border: none;
+  border-radius: 200px;
+  background: rgb(0, 174, 239);
+  box-shadow: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  box-sizing: border-box;
+  color: white !important;
+}
+
+body .buorg-button:hover, body .buorg-button:active {
+  background: rgb(51, 190, 242);
+  color: white;
+}
+
+body .buorg-update {
+  text-align: center;
+  width: 30%;
+  min-width: 250px;
+  margin: 20px auto;
+}
+
+body .buorg-ignore {
+  display: none;
+}

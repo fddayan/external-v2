@@ -1,12 +1,13 @@
+import { Activity, getActivities } from "@repo/data";
 import { PageContextServer } from "vike/types";
-import { Activity, getActivities } from "../getActivities";
+import { getDirectusConfig } from "../../../utils/directurs";
 
 export interface Data {
   activities: Activity[];
 }
 
 export const data = async (context: PageContextServer) => {
-  const activities = await getActivities();
+  const activities = await getActivities(getDirectusConfig())();
 
   return activities;
 };

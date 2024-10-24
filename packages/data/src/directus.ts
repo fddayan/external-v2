@@ -1,22 +1,5 @@
 import { GraphQLClient, RequestDocument } from "graphql-request";
 
-// export const directusURL = "http://localhost:8055";
-
-// export const directusGraphQL = `${directusURL}/graphql`;
-
-// export const getAuthToken = async () => {
-//   const response = await fetch(`${directusURL}/auth/login`, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({
-//       email: "admin@example.com",
-//       password: "d1r3ctu5",
-//     }),
-//   });
-//   const data = await response.json();
-//   return data.data.access_token;
-// };
-
 const getGraphqlURL = (host: string) => {
   return `${host}/graphql`;
 };

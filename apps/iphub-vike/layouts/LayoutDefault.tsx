@@ -3,6 +3,14 @@ import "./style.css";
 import React from "react";
 import logoUrl from "../assets/logo.svg";
 import { Link } from "../components/Link.jsx";
+import { AuthProvider } from "@repo/product";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 export default function LayoutDefault({
   children,
@@ -10,14 +18,16 @@ export default function LayoutDefault({
   children: React.ReactNode;
 }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        maxWidth: 900,
-        margin: "auto",
-      }}
-    >
-      {/* <Sidebar>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <div
+          style={{
+            display: "flex",
+            // maxWidth: 900,
+            margin: "auto",
+          }}
+        >
+          {/* <Sidebar>
         <Logo />
         <Link href="/">Welcome</Link>
         <Link href="/todo">Todo</Link>
@@ -25,8 +35,10 @@ export default function LayoutDefault({
         {""}
       </Sidebar>
       <Content>{children}</Content> */}
-      {children}
-    </div>
+          {children}
+        </div>
+      </AuthProvider>
+    </QueryClientProvider>
   );
 }
 

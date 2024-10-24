@@ -1,0 +1,18 @@
+check-ssl-folder:
+	@if [ ! -d "../spa-foundation/.ssl" ]; then make print-ssl-folder-error; exit 1; fi
+
+print-ssl-folder-error:
+	@echo    ""
+	@echo -e "****************************************************************************"
+	@echo -e "**" 
+	@echo -e "** Our web apps have been set to run by default in HTTPS."  
+	@echo -e "** You need to do a one time config for this to work."
+	@echo -e "**" 
+	@echo -e "**   1. Go to the root of web-monorepo/ and run 'make configure-ssl'"  
+	@echo -e "**   2. Follow the instructions there 🙌" 
+	@echo -e "**" 
+	@echo -e "** If you have any issues or still want to run the project with HTTP you can do so"
+	@echo -e "** by running 'make run-http'"
+	@echo -e "**" 
+	@echo -e "****************************************************************************"
+	@echo    ""

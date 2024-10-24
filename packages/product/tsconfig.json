@@ -1,0 +1,5 @@
+{
+  "extends": "@repo/typescript-config/react-library.json",
+  "include": [".", "../pages/src/mentors"],
+  "exclude": ["dist", "build", "node_modules"]
+}

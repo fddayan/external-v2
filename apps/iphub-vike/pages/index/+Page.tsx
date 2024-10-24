@@ -1,6 +1,8 @@
 import React from "react";
-import { ActivityCornerPage } from "@repo/iphub-pages/index";
+import { useData } from "vike-react/useData";
 
 export default function Page() {
-  return <ActivityCornerPage data={{ title: "hola" }} />;
+  const data = useData();
+
+  return null;
 }
